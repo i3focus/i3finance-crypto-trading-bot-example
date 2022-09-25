@@ -17,7 +17,7 @@ import java.math.BigDecimal
 import java.util.*
 
 private const val PRICE_GOOD_TO_BUY = "56000"
-private const val AMOUNT_TO_BUY = "0.01"
+private const val AMOUNT_TO_BUY = "0.02"
 private const val STOP_GAIN_PERCENTAGE = 4f
 private const val STOP_LOSS_PERCENTAGE = 25f
 
