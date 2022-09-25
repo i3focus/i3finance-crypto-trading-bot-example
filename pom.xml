@@ -19,14 +19,12 @@
 		<cassandre.trading.bot.version>6.0.0</cassandre.trading.bot.version>
 		<docker.organization>i3focus</docker.organization>
 		<docker.image.name>i3finance-trading-bot-example</docker.image.name>
+		<xchange.binance.version>5.0.13</xchange.binance.version>
+		<telegram.bot.api.version>6.2.0</telegram.bot.api.version>
 		<DOCKER_REGISTRY_USER/>
 		<DOCKER_REGISTRY_PASSWORD/>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -51,11 +49,6 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-registry-prometheus</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -74,21 +67,20 @@
 		</dependency>
 		<dependency>
 			<groupId>org.knowm.xchange</groupId>
-			<artifactId>xchange-kucoin</artifactId>
-			<version>5.0.13</version>
+			<artifactId>xchange-binance</artifactId>
+			<version>${xchange.binance.version}</version>
 		</dependency>
 
 		<!-- https://github.com/pengrad/java-telegram-bot-api -->
 		<dependency>
 			<groupId>com.github.pengrad</groupId>
 			<artifactId>java-telegram-bot-api</artifactId>
-			<version>6.2.0</version>
+			<version>${telegram.bot.api.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -139,5 +131,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
