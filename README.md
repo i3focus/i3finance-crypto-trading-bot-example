@@ -16,6 +16,7 @@ curl -s "https://api.kucoin.com/api/v1/market/candles?type=1day&symbol=BTC-USDT&
 
 ### Reference
 
+* [Binance API Key](https://www.binance.com/en/support/faq/ab78f9a1b8824cf0a106b4229c76496d)
 * [Cassandre Documentation](https://trading-bot.cassandre.tech/cassandre_basics/overview.html)
 * [Baeldung Cassandre SpringBoot Trading Bot](https://www.baeldung.com/cassandre-spring-boot-trading-bot)
 
